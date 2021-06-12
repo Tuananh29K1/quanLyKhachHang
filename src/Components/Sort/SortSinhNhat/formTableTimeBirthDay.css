@@ -1,0 +1,33 @@
+.root{
+    --mau_xanh_nhat:#dcf4fc;
+  --mau_xanh:#0090da;
+  --mau_den: #3f3f3f;
+  --mau_xanh_la:#4bac4d;
+  --mau_xanh_dam: #00588b;
+  --mau_trang:#ffffff;
+  --mau_xam: #eee;
+}
+.tableTime{
+    width: 750px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: -30px;
+    left: 245px;
+    z-index: 1001;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px #0c111550;
+}
+.tableTime  h4{
+    font-size: 14px;
+    font-weight: 600;
+}
+.tableTime  a{
+    font-size: 14px;
+    font-weight: 300;
+    cursor: pointer;
+    color: #0090da !important;
+}
+.tableTime li {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,71 @@
+.root{
+    --mau_xanh_nhat:#dcf4fc;
+  --mau_xanh:#0090da;
+  --mau_den: #3f3f3f;
+  --mau_xanh_la:#4bac4d;
+  --mau_xanh_dam: #00588b;
+  --mau_trang:#ffffff;
+  --mau_xam: #eee;
+}
+.containerTime{
+    width: 550px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px #0c111550;
+    position: absolute;
+    bottom: -90px;
+    left: 230px;
+    z-index: 1000;
+    transition: 1s ease-in-out;
+}
+.boxTime{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.inputTime{
+    border: none;
+}
+p{
+    font-weight: 800;
+}
+.readTime{
+    border: none;
+    color: #0090da;
+    font-weight: 700;
+    width: 100px;
+}
+.react-datepicker__day-names{
+    background-color:#0090da ;
+}
+.react-datepicker{
+    border: none;
+}
+.react-datepicker__header{
+    background-color: #fff;
+}
+.lineTime{
+    position: relative;
+}
+.lineTime::after{
+    content: "";
+    height: 100%;
+    width: 2px;
+    background-color: #eee;
+    position: absolute;
+    top: 0;
+    right: -16px;
+}
+
+.buttonTime{
+    width: 100%;
+    padding-top: 20px;
+}
+.buttonTime > button {
+    display: block;
+    background-color: #4bac4d;
+    color: #fff;
+    margin-left: auto;
+}

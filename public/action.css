@@ -1,0 +1,201 @@
+:root {
+  --mau_xanh_nhat: #dcf4fc;
+  --mau_xanh: #0090da;
+  --mau_den: #3f3f3f;
+  --mau_xanh_la: #4bac4d;
+  --mau_xanh_dam: #00588b;
+  --mau_trang: #ffffff;
+  --mau_xam: #eee;
+
+  --mau-warning: #c60021;
+}
+.active-modal{
+  overflow-y: hidden;
+}
+th,
+td {
+  cursor: pointer;
+}
+
+.labelInputFile::after,
+button::after {
+  content: "";
+  width: 0%;
+  height: 100%;
+  border-radius: 4px;
+  background-color: #eefbfb3b;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s ease-in-out;
+}
+.labelInputFile:hover::after,
+button:hover::after {
+  width: 100%;
+  visibility: visible;
+  opacity: 1;
+}
+.labelInputFile:hover,
+button:hover {
+  color: var(--mau_trang);
+  background-color: var(--mau_xanh_la);
+}
+.fa-angle-down,
+.fa-angle-up {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+.fa-angle-down::after,
+.fa-angle-up::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -7px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: var(--mau_xanh_nhat);
+  z-index: -1;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+.fa-angle-down:hover::after,
+.fa-angle-up:hover::after {
+  opacity: 1;
+}
+.navMain > ul > li:hover {
+  background-color: var(--mau_xanh_dam);
+}
+.navMain > ul > li:hover .subMenu {
+  visibility: visible;
+  top: 54px;
+  left: 0;
+  opacity: 1;
+  z-index: 1000;
+}
+.subMenu > li:hover {
+  background-color: var(--mau_xanh);
+}
+.navLogin__link > ul > li:hover {
+  background-color: var(--mau_xanh_nhat);
+}
+.navLogin__link > ul > li:hover .subMenuLogin {
+  z-index: 1000;
+  opacity: 1;
+  left: -100px;
+  visibility: visible;
+}
+.subMenuLogin > li:hover {
+  background-color: var(--mau_xanh_nhat);
+}
+.subFile > li:hover a > i,
+.subFile > li:hover a > span,
+.subMenuLogin > li:hover a > i,
+.subMenuLogin > li:hover a > span {
+  color: var(--mau_den);
+}
+.groupFile:hover .subFile {
+  left: 30px;
+  z-index: 1000;
+  opacity: 1;
+  visibility: visible;
+}
+.subFile > li:hover {
+  background-color: var(--mau_xanh_nhat);
+}
+.tab-active,
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  width: 0%;
+  height: 5px;
+  position: absolute;
+  bottom: 0;
+  left: -1px;
+  background-color: var(--mau_xanh);
+  opacity: 0;
+  transition: 0.5s ease-out;
+}
+.nav-link:hover::after {
+  width: 100%;
+  left: 0;
+  opacity: 1;
+}
+.tab-active::after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--mau_xanh);
+  opacity: 1;
+  transition: 0.5s ease-out;
+}
+/* .groupDetail:hover .list--detail{
+    visibility: visible;
+    top: 36px;
+    opacity: 1;
+    z-index: 1000;
+} */
+.itemSelect:hover {
+  background-color: #ccc;
+}
+.changeColor {
+  background-color: #4bac4d8e;
+  font-weight: 600;
+}
+.changeColorDetails {
+  background-color: #4bac4d8e;
+  border: none;
+  border-top: 2px solid #4bac4d8e;
+  font-weight: 600;
+}
+.changeBorderItem {
+  border: 2px solid #4bac4d8e;
+  border-bottom: none;
+}
+.changeBorder {
+  border: 2px solid #4bac4d8e;
+  border-top: none;
+}
+.tableBirthday {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #fff;
+  position: absolute;
+  top: 24px;
+  right: -194px;
+  z-index: 10000;
+  border-top: 1px solid #4bac4d8e;
+  box-shadow: 0 5px 15px #0c111550;
+}
+.tableBirthday button {
+  margin-left: 0px;
+}
+.listNhomKH {
+  border-top: 1px solid #4bac4d8e;
+  box-shadow: 0 5px 15px #0c111550;
+  padding: 10px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 11px;
+  left: 175px;
+  z-index: 1000;
+  width: 200px;
+}
+.listItemKH--item {
+  color: #3f3f3f;
+    width: 100%;
+}
+.updateNhom{
+  bottom: 10px;
+}

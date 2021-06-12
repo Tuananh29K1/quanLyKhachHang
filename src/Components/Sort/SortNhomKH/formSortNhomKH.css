@@ -1,0 +1,126 @@
+.root {
+  --mau_xanh_nhat: #dcf4fc;
+  --mau_xanh: #0090da;
+  --mau_den: #3f3f3f;
+  --mau_xanh_la: #4bac4d;
+  --mau_xanh_dam: #00588b;
+  --mau_trang: #ffffff;
+  --mau_xam: #eee;
+}
+.popUp--nhomKH {
+  width: 620px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  position: fixed;
+  top: 10%;
+  right: 30%;
+  z-index: 1000;
+}
+.title--popUpNhomKH {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 29px;
+}
+.navTab--popUp > ul > li {
+  display: inline-block;
+
+  padding: 10px 29px;
+
+}
+.navContent--popUp {
+  padding: 29px;
+  border-top: 1px solid #3f3f3f83;
+}
+.groupInput--popUpNhomKh {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.groupInput--popUpNhomKh > label {
+  width: 20%;
+}
+.input--popUpNhomKH {
+  width: 80%;
+}
+.inputNKH {
+  width: 100%;
+}
+
+.inputNKH-sale input {
+  width: 81%;
+}
+.groupSale {
+  position: relative;
+}
+.input--popUpNhomKH input {
+  border: none;
+  border-bottom: 1px solid #3f3f3f;
+}
+.groupButtonNKH > button {
+  width: 50px;
+  height: 25px;
+  padding: 0px;
+  background-color: #4bac4d;
+  color: #ffffff;
+  margin: 2px;
+}
+.groupButtonNKH {
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.groupButton--nangCao,
+.buttonNKH--thongTin {
+  margin-top: 50px;
+  text-align: right;
+}
+.groupButton--nangCao button,
+.buttonNKH--thongTin button {
+  margin-left: 10px;
+  background-color: #4bac4d;
+  color: #ffffff;
+}
+
+/* ================ end Thong Tin ====================== */
+.groupRadioNKH{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.navContent--nangCao p {
+    font-size: 14px;
+    font-weight: 300;
+}
+.groupThietLap{
+    margin-bottom: 50px;
+}
+.groupCheckNKH{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+/* ======================= active =========================== */
+.activeNKH{
+    position: relative;
+}
+.activeNKH::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #4bac4d;
+}
+.activeNKH,
+.nonActiveNKH{
+  cursor: pointer;
+}
